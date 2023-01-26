@@ -1,1 +1,7 @@
-﻿
+﻿  SBomberProject.cpp
+C:\gb\CPP_GoF\SBomberProject\SBomberProject.cpp(14,36): error C2352: MyTools::FileLoggerSingletone::OpenLogFile: недопустимый вызов нестатической функции-члена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(68): message : см. объявление "MyTools::FileLoggerSingletone::OpenLogFile"
+C:\gb\CPP_GoF\SBomberProject\SBomberProject.cpp(36,36): error C2352: MyTools::FileLoggerSingletone::CloseLogFile: недопустимый вызов нестатической функции-члена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(69): message : см. объявление "MyTools::FileLoggerSingletone::CloseLogFile"
+  Tank.cpp
+  Создание кода...

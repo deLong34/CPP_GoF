@@ -2,6 +2,7 @@
 
 #include <stdint.h>
 #include <string>
+using namespace std;
 
 namespace MyTools {
 
@@ -39,17 +40,73 @@ namespace MyTools {
     void SetColor(ConsoleColor color);
 
 	//=============================================================================================
-
-	void __fastcall OpenLogFile(const std::string& FN);
-
-	void CloseLogFile();
-
-	void __fastcall WriteToLog(const std::string& str);
-
-	void __fastcall WriteToLog(const std::string& str, int n);
-
-	void __fastcall WriteToLog(const std::string& str, double d);
-
+    class FileLoggerSingletone
+    {
+    private:
+        FileLoggerSingletone() {}
+        FileLoggerSingletone(FileLoggerSingletone& other) = delete;
+        FileLoggerSingletone& operator =(const FileLoggerSingletone&) = delete;
+        static FileLoggerSingletone* theInstance;
+    public:
+        static FileLoggerSingletone* getInstance()
+        {
+            if (theInstance == nullptr) {
+                theInstance = new FileLoggerSingletone();
+            }
+            return theInstance;
+        }
+        void __fastcall OpenLogFile(const string& FN);
+        void CloseLogFile();
+        string GetCurDateTime();
+        void __fastcall WriteToLog(const string& str);
+        void __fastcall WriteToLog(const string& str, int n);
+        void __fastcall WriteToLog(const string& str, double d);
+    };
 	//=============================================================================================
+    //Задание 2*
+    class ILogger
+    {
+        public:
+        virtual void __fastcall WriteToLog(const string& str) = 0;
+        virtual void __fastcall WriteToLog(const string& str, int n) = 0;
+        virtual void __fastcall WriteToLog(const string& str, double d) = 0;
+    };
 
+    class LoggerSigletone : ILogger
+    {
+    private:
+        FileLoggerSingletone* FLS;
+        int cnt = 1;
+        bool CheckAccess() const {
+            return true;
+        }
+        void LogChange();
+
+    public:
+        LoggerSigletone(FileLoggerSingletone* FLS) : FLS(FLS) {}
+        virtual void __fastcall WriteToLog(const string& str) override {
+            if (CheckAccess())
+            {
+                LogChange();
+                FLS->WriteToLog(str);
+            }
+        }
+        virtual void __fastcall WriteToLog(const string& str, int n) override {
+            if (CheckAccess())
+            {
+                LogChange();
+                FLS->WriteToLog(str, n);
+            }
+        }
+        virtual void __fastcall WriteToLog(const string& str, double d) override {
+            if (CheckAccess())
+            {
+                LogChange();
+                FLS->WriteToLog(str, d);
+            }
+        }
+        FileLoggerSingletone* getInstance() {
+            return  FLS->getInstance();
+        }
+    }; 
 };
