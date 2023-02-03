@@ -132,7 +132,7 @@ void SBomber::CheckBombsAndGround()
         {
             pGround->AddCrater(vecBombs[i]->GetX());
             CheckDestoyableObjects(vecBombs[i]);
-            DeleteDynamicObj(vecBombs[i]);
+            Invocer::DeleteDynamicObj(vecBombs[i], vecBombs);
         }
     }
 
@@ -150,11 +150,11 @@ void SBomber::CheckDestoyableObjects(Bomb * pBomb)
         if (vecDestoyableObjects[i]->isInside(x1, x2))
         {
             score += vecDestoyableObjects[i]->GetScore();
-            DeleteStaticObj(vecDestoyableObjects[i]);
+            Invocer::DeleteStaticObj(vecDestoyableObjects[i], vecDestoyableObjects);
         }
     }
 }
-
+//-----1-----////////////////////////////////////////
 void SBomber::DeleteDynamicObj(DynamicObject* pObj)
 {
     auto it = vecDynamicObj.begin();
@@ -168,6 +168,7 @@ void SBomber::DeleteDynamicObj(DynamicObject* pObj)
     }
 }
 
+///
 void SBomber::DeleteStaticObj(GameObject* pObj)
 {
     auto it = vecStaticObj.begin();
@@ -292,11 +293,13 @@ void SBomber::ProcessKBHit()
         break;
 
     case 'b':
-        DropBomb();
+       Invocer::DropBomb(FindPlane(), vecDynamicObj, FindAllBombs());
+       //DropBomb();
         break;
 
     case 'B':
-        DropBomb();
+        Invocer::DropBomb(FindPlane(), vecDynamicObj, FindAllBombs());
+        //DropBomb();
         break;
 
     default:
@@ -345,6 +348,7 @@ void SBomber::TimeFinish()
     LoggerSigletone::getInstance()->WriteToLog(string(__FUNCTION__) + " deltaTime = ", (int)deltaTime);
 }
 
+//-----1-----//
 void SBomber::DropBomb()
 {
     if (bombsNumber > 0)
