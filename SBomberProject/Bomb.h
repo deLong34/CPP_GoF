@@ -14,3 +14,16 @@ private:
 
 };
 
+//-----2-----/////////////
+class BombDecorator : public DynamicObject
+{
+private:
+	DynamicObject* bomb;
+public:
+	BombDecorator(DynamicObject* bomb) : bomb(bomb) {}
+	void Draw() const override;
+	void Move(uint16_t time) override; 
+	
+};
+
+
