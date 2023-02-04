@@ -356,11 +356,13 @@ void SBomber::DropBomb()
         double y = pPlane->GetY() + 2;
 
         Bomb* pBomb = new Bomb;
+        BombDecorator* pBombDec = new BombDecorator(pBomb);
         pBomb->SetDirection(0.3, 1);
         pBomb->SetSpeed(2);
         pBomb->SetPos(x, y);
         pBomb->SetWidth(SMALL_CRATER_SIZE);
 
+        vecDynamicObj.push_back(pBombDec);
         vecDynamicObj.push_back(pBomb);
         bombsNumber--;
         score -= Bomb::BombCost;
