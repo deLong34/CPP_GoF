@@ -123,7 +123,7 @@ void SBomber::CheckPlaneAndLevelGUI()
 
 void SBomber::CheckBombsAndGround() 
 {
-    vector<Bomb*> vecBombs = FindAllBombs();
+    vector<Bomb*> vecBombs = BombIterator::FindAllBombs();
     Ground* pGround = FindGround();
     const double y = pGround->GetY();
     for (size_t i = 0; i < vecBombs.size(); i++)
@@ -222,21 +222,65 @@ Ground* SBomber::FindGround() const
     return nullptr;
 }
 
-vector<Bomb*> SBomber::FindAllBombs() const
-{
-    vector<Bomb*> vecBombs;
-
-    for (size_t i = 0; i < vecDynamicObj.size(); i++)
-    {
-        Bomb* pBomb = dynamic_cast<Bomb*>(vecDynamicObj[i]);
-        if (pBomb != nullptr)
-        {
-            vecBombs.push_back(pBomb);
-        }
+//-----3.1-----//////////////
+class IIterator {
+public:
+    virtual bool hesNext() const = 0;
+    virtual DynamicObject* next() = 0;
+    virtual ~IIterator() {}
+};
+//
+class BombIterator : public IIterator {
+private:
+    std::vector<DynamicObject*> vecDynamicObj;
+    int pos = 0;
+public:
+    BombIterator(const  std::vector<DynamicObject*> vecDynamicObj) : vecDynamicObj(vecDynamicObj) {}
+    bool hesNext() const override {
+        return pos < vecDynamicObj.size();
     }
 
-    return vecBombs;
-}
+    DynamicObject* next() override {
+        DynamicObject* DynObj = vecDynamicObj[++pos];
+        return DynObj;
+    }
+
+    IIterator* CreateIterator() const {
+        return new BombIterator(vecDynamicObj);
+    }
+
+    vector<Bomb*> FindAllBombs() const {
+        vector<Bomb*> vecBombs;
+        IIterator* it = CreateIterator();
+        while (it->hesNext())
+        {
+            Bomb* pBomb = dynamic_cast<Bomb*>(vecDynamicObj[pos]);
+            if (pBomb != nullptr)
+            {
+                vecBombs.push_back(pBomb);
+            }
+            it->next();
+        }
+        return vecBombs;
+    }
+};
+
+
+//vector<Bomb*> SBomber::FindAllBombs() const
+//{
+//    vector<Bomb*> vecBombs;
+//
+//    for (size_t i = 0; i < vecDynamicObj.size(); i++)
+//    {
+//        Bomb* pBomb = dynamic_cast<Bomb*>(vecDynamicObj[i]);
+//        if (pBomb != nullptr)
+//        {
+//            vecBombs.push_back(pBomb);
+//        }
+//    }
+//
+//    return vecBombs;
+//}
 
 Plane* SBomber::FindPlane() const
 {
