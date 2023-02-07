@@ -7,13 +7,14 @@ public:
 
     virtual void Draw() const = 0;
 
-    inline void SetPos(double nx, double ny) { x = nx; y = ny; }
+    virtual inline void SetPos(double nx, double ny) = 0;
 
-    inline double GetY() const { return y; }
-    inline double GetX() const { return x; }
+    virtual inline double GetY() const = 0;
+    virtual inline double GetX() const = 0;
 
-    inline void SetWidth(uint16_t widthN) { width = widthN; }
-    inline uint16_t GetWidth() const { return width; }
+    virtual inline void SetWidth(uint16_t widthN) = 0;
+    virtual inline uint16_t GetWidth() const = 0;
+    inline double GetYi() const { return y; }
 
 protected:
 

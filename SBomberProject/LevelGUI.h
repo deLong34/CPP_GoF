@@ -6,6 +6,14 @@
 
 class LevelGUI : public GameObject {
 public:
+    //
+    inline void SetPos(double nx, double ny) { x = nx; y = ny; }
+    inline double GetY() const { return y; }
+    inline double GetX() const { return x; }
+    inline void SetWidth(uint16_t widthN) { width = widthN; }
+    inline uint16_t GetWidth() const { return width; }
+    //
+
 
     LevelGUI() : bombsNumber(0), score(0), passedTime(0), fps(0), height(0) { }
 
