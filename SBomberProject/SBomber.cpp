@@ -1,6 +1,7 @@
 
 #include <conio.h>
 #include <windows.h>
+#include <iostream>
 
 #include "MyTools.h"
 #include "SBomber.h"
@@ -58,10 +59,23 @@ SBomber::SBomber()
     pTank->SetPos(50, groundY - 1);
     vecStaticObj.push_back(pTank);
 
+    //-----1-----//
+    int v = 0;
+    cout << "¬ведите цифру 0, если хотите стандартный дом, или 1, если дом без трубы и большими окнами: " << endl;
+    cin >> v;
+    HouseBuilder* hb = nullptr;
+    if (v == 1) {
+        hb = new HouseBuilderB;
+    }
+    else {
+        hb = new HouseBuilderA;
+    }
+    HouseDirector::construct(hb);
+
     House * pHouse = new House;
     pHouse->SetWidth(13);
     pHouse->SetPos(80, groundY - 1);
-    vecStaticObj.push_back(pHouse);
+    vecStaticObj.push_back(hb->house());
 
     /*
     Bomb* pBomb = new Bomb;
@@ -109,51 +123,51 @@ void SBomber::CheckObjects()
 {
     WriteToLog(string(__FUNCTION__) + " was invoked");
 
-    CheckPlaneAndLevelGUI();
-    CheckBombsAndGround();
+    collisionDetector->CheckPlaneAndLevelGUI();
+    collisionDetector->CheckBombsAndGround();
 };
 
-void SBomber::CheckPlaneAndLevelGUI()
-{
-    if (FindPlane()->GetX() > FindLevelGUI()->GetFinishX())
-    {
-        exitFlag = true;
-    }
-}
-
-void SBomber::CheckBombsAndGround() 
-{
-    vector<Bomb*> vecBombs = FindAllBombs();
-    Ground* pGround = FindGround();
-    const double y = pGround->GetY();
-    for (size_t i = 0; i < vecBombs.size(); i++)
-    {
-        if (vecBombs[i]->GetY() >= y) // ѕересечение бомбы с землей
-        {
-            pGround->AddCrater(vecBombs[i]->GetX());
-            CheckDestoyableObjects(vecBombs[i]);
-            DeleteDynamicObj(vecBombs[i]);
-        }
-    }
-
-}
-
-void SBomber::CheckDestoyableObjects(Bomb * pBomb)
-{
-    vector<DestroyableGroundObject*> vecDestoyableObjects = FindDestoyableGroundObjects();
-    const double size = pBomb->GetWidth();
-    const double size_2 = size / 2;
-    for (size_t i = 0; i < vecDestoyableObjects.size(); i++)
-    {
-        const double x1 = pBomb->GetX() - size_2;
-        const double x2 = x1 + size;
-        if (vecDestoyableObjects[i]->isInside(x1, x2))
-        {
-            score += vecDestoyableObjects[i]->GetScore();
-            DeleteStaticObj(vecDestoyableObjects[i]);
-        }
-    }
-}
+//void SBomber::CheckPlaneAndLevelGUI()
+//{
+//    if (FindPlane()->GetX() > FindLevelGUI()->GetFinishX())
+//    {
+//        exitFlag = true;
+//    }
+//}
+//
+//void SBomber::CheckBombsAndGround() 
+//{
+//    vector<Bomb*> vecBombs = FindAllBombs();
+//    Ground* pGround = FindGround();
+//    const double y = pGround->GetY();
+//    for (size_t i = 0; i < vecBombs.size(); i++)
+//    {
+//        if (vecBombs[i]->GetY() >= y) // ѕересечение бомбы с землей
+//        {
+//            pGround->AddCrater(vecBombs[i]->GetX());
+//            CheckDestoyableObjects(vecBombs[i]);
+//            DeleteDynamicObj(vecBombs[i]);
+//        }
+//    }
+//
+//}
+//
+//void SBomber::CheckDestoyableObjects(Bomb * pBomb)
+//{
+//    vector<DestroyableGroundObject*> vecDestoyableObjects = FindDestoyableGroundObjects();
+//    const double size = pBomb->GetWidth();
+//    const double size_2 = size / 2;
+//    for (size_t i = 0; i < vecDestoyableObjects.size(); i++)
+//    {
+//        const double x1 = pBomb->GetX() - size_2;
+//        const double x2 = x1 + size;
+//        if (vecDestoyableObjects[i]->isInside(x1, x2))
+//        {
+//            score += vecDestoyableObjects[i]->GetScore();
+//            DeleteStaticObj(vecDestoyableObjects[i]);
+//        }
+//    }
+//}
 
 void SBomber::DeleteDynamicObj(DynamicObject* pObj)
 {
