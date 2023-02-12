@@ -1,1 +1,11 @@
-﻿
+﻿  Bomb.cpp
+  Ground.cpp
+  House.cpp
+  LevelGUI.cpp
+  MyTools.cpp
+  Plane.cpp
+  SBomber.cpp
+  SBomberProject.cpp
+  Tank.cpp
+  Создание кода...
+  SBomberProject.vcxproj -> C:\gb\CPP_GoF\x64\Debug\SBomberProject.exe
