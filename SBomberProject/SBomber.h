@@ -11,7 +11,7 @@
 class SBomber
 {
 public:
-
+    
     SBomber();
     ~SBomber();
     
@@ -24,9 +24,9 @@ public:
     void DrawFrame();
     void MoveObjects();
     void CheckObjects();
-
+    std::vector<DestroyableGroundObject*> FindDestoyableGroundObjects() const;
 private:
-
+    LogVisitor* logVisitor;
     void CheckPlaneAndLevelGUI();
     void CheckBombsAndGround();
     void __fastcall CheckDestoyableObjects(Bomb* pBomb);
@@ -37,7 +37,7 @@ private:
     Ground * FindGround() const;
     Plane * FindPlane() const;
     LevelGUI * FindLevelGUI() const;
-    std::vector<DestroyableGroundObject*> FindDestoyableGroundObjects() const;
+    //std::vector<DestroyableGroundObject*> FindDestoyableGroundObjects() const;
     std::vector<Bomb*> FindAllBombs() const;
 
     void DropBomb();
