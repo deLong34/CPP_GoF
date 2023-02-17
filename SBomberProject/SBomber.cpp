@@ -23,6 +23,7 @@ SBomber::SBomber()
     score(0)
 {
     WriteToLog(string(__FUNCTION__) + " was invoked");
+    LogVisitor* logVisitor = new LogVisitor;
 
     Plane* p = new Plane;
     p->SetDirection(1, 0.1);
@@ -100,6 +101,8 @@ void SBomber::MoveObjects()
     {
         if (vecDynamicObj[i] != nullptr)
         {
+            logVisitor->log(vecDynamicObj[i]);
+           //logVisitor.log(vecDynamicObj[i]);
             vecDynamicObj[i]->Move(deltaTime);
         }
     }
@@ -123,6 +126,7 @@ void SBomber::CheckPlaneAndLevelGUI()
 
 void SBomber::CheckBombsAndGround() 
 {
+    vector<DestroyableGroundObject*> vecDestoyableObjects = FindDestoyableGroundObjects();
     vector<Bomb*> vecBombs = FindAllBombs();
     Ground* pGround = FindGround();
     const double y = pGround->GetY();
@@ -131,29 +135,31 @@ void SBomber::CheckBombsAndGround()
         if (vecBombs[i]->GetY() >= y) // Пересечение бомбы с землей
         {
             pGround->AddCrater(vecBombs[i]->GetX());
-            CheckDestoyableObjects(vecBombs[i]);
-            DeleteDynamicObj(vecBombs[i]);
-        }
-    }
-
-}
-
-void SBomber::CheckDestoyableObjects(Bomb * pBomb)
-{
-    vector<DestroyableGroundObject*> vecDestoyableObjects = FindDestoyableGroundObjects();
-    const double size = pBomb->GetWidth();
-    const double size_2 = size / 2;
-    for (size_t i = 0; i < vecDestoyableObjects.size(); i++)
-    {
-        const double x1 = pBomb->GetX() - size_2;
-        const double x2 = x1 + size;
-        if (vecDestoyableObjects[i]->isInside(x1, x2))
-        {
+            //CheckDestoyableObjects(vecBombs[i]);
             score += vecDestoyableObjects[i]->GetScore();
-            DeleteStaticObj(vecDestoyableObjects[i]);
+            DeleteDynamicObj(vecBombs[i]);
+            DeleteStaticObj(vecBombs[i]->CheckDestoyableObjects(vecBombs[i]));
         }
     }
+
 }
+
+//void SBomber::CheckDestoyableObjects(Bomb * pBomb)
+//{
+//    vector<DestroyableGroundObject*> vecDestoyableObjects = FindDestoyableGroundObjects();
+//    const double size = pBomb->GetWidth();
+//    const double size_2 = size / 2;
+//    for (size_t i = 0; i < vecDestoyableObjects.size(); i++)
+//    {
+//        const double x1 = pBomb->GetX() - size_2;
+//        const double x2 = x1 + size;
+//        if (vecDestoyableObjects[i]->isInside(x1, x2))
+//        {
+//            score += vecDestoyableObjects[i]->GetScore();
+//            DeleteStaticObj(vecDestoyableObjects[i]);
+//        }
+//    }
+//}
 
 void SBomber::DeleteDynamicObj(DynamicObject* pObj)
 {

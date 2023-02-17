@@ -116,7 +116,13 @@ namespace MyTools {
             logOut << GetCurDateTime() << " - " << str << d << endl;
         }
     }
-
+    void __fastcall WriteToLog(const string& str, pair<double, double> a, double d)
+    {
+        if (logOut.is_open())
+        {
+            logOut << GetCurDateTime() << " - " << str << a.first << ", " << a.second << " speed = " << d << endl;
+        }
+    }
     //=============================================================================================
 
 
