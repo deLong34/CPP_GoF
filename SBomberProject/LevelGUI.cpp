@@ -2,6 +2,7 @@
 
 #include "LevelGUI.h"
 #include "MyTools.h"
+#include <ctime>
 
 using namespace std;
 using namespace MyTools;
@@ -40,6 +41,20 @@ void LevelGUI::Draw() const
     cout << "BombsNum: " << bombsNumber;
     GotoXY(62, 1);
     cout << "Score: " << score;
+    //---1.1---//
+    GotoXY(3, 3);
+   // std::string mes = getMessage();
+    if ((std::clock() - tStart) < 3000)
+        cout << getMessage;
+    else if ((std::clock() - tStart) < 6000)
+        cout << getMessage;
+    else if ((std::clock() - tStart) < 9000)
+        cout << getMessage;
+    else if ((std::clock() - tStart) < 12000)
+        cout << getMessage;
+    else if ((std::clock() - tStart) < 15000)
+        cout << getMessage;
+    else  cout << getMessage;
 }
 
 void __fastcall LevelGUI::SetParam(uint64_t passedTimeNew, uint64_t fpsNew, uint16_t bombsNumberNew, int16_t scoreNew)

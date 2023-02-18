@@ -4,6 +4,9 @@
 #include "Tank.h"
 #include "MyTools.h"
 
+#include <stdlib.h>
+#include <time.h>
+
 using namespace std;
 using namespace MyTools;
 
@@ -41,4 +44,12 @@ void Tank::Draw() const
 	cout << "    #####";
 	GotoXY(x,y);
 	cout << " ###########";
+	//---1.1---//
+	srand(time(NULL));
+	int num = rand() % 5;
+	if (num == 1) { mediator.SendMessage1(); }
+	if (num == 2) { mediator.SendMessage2(); }
+	if (num == 3) { mediator.SendMessage3(); }
+	if (num == 4) { mediator.SendMessage4(); }
+	else { mediator.SendMessage5(); }
 }

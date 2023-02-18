@@ -1,7 +1,7 @@
 #pragma once
 
 #include <stdint.h>
-
+#include "LevelGUI.h"
 #include "DestroyableGroundObject.h"
 
 class Tank : public DestroyableGroundObject
@@ -17,5 +17,7 @@ public:
 private:
 
 	const uint16_t score = 30;
+	//---1.1---//
+    Mediator* mediator = new Mediator;
 };
 
