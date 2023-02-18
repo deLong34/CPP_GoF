@@ -22,9 +22,15 @@ SBomber::SBomber()
     bombsNumber(10),
     score(0)
 {
-    WriteToLog(string(__FUNCTION__) + " was invoked");
+    //-----1.2-----//
+    int cub = rand();
 
-    Plane* p = new Plane;
+    WriteToLog(string(__FUNCTION__) + " was invoked");
+    //
+    Plane* p;
+    if (cub % 2 == 0)
+    Plane* p = new ColorPlane;
+    else  Plane* p = new BigPlane;
     p->SetDirection(1, 0.1);
     p->SetSpeed(4);
     p->SetPos(5, 10);
