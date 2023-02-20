@@ -5,12 +5,13 @@
 #include "MyTools.h"
 
 using namespace std;
-
+using namespace MyTools;
 //========================================================================================================================
+//extern FileLogger logger;
 
 int main(void)
 {
-    MyTools::OpenLogFile("log.txt");
+   FileLogger logger("log.txt");
 
     SBomber game;
 
@@ -32,7 +33,7 @@ int main(void)
 
     } while (!game.GetExitFlag());
 
-    MyTools::CloseLogFile();
+   // MyTools::CloseLogFile();
 
     return 0;
 }

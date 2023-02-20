@@ -1,1 +1,383 @@
-﻿
+﻿  Bomb.cpp
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,18): error C3646: logOut: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,24): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,19): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,32): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,16): error C3646: GetCurDateTime: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,30): error C2059: синтаксическая ошибка: (
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,33): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,62): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,65): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,13): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,25): error C2065: FN: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,29): error C2653: ios_base: не является именем класса или пространства имен
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,39): error C2065: out: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(70,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(72,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(86,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,63): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(93,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,63): error C2065: n: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,68): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(100,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,63): error C2065: d: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,68): error C2065: endl: необъявленный идентификатор
+  Ground.cpp
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,18): error C3646: logOut: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,24): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,19): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,32): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,16): error C3646: GetCurDateTime: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,30): error C2059: синтаксическая ошибка: (
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,33): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,62): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,65): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,13): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,25): error C2065: FN: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,29): error C2653: ios_base: не является именем класса или пространства имен
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,39): error C2065: out: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(70,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(72,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(86,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,63): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(93,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,63): error C2065: n: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,68): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(100,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,63): error C2065: d: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,68): error C2065: endl: необъявленный идентификатор
+  House.cpp
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,18): error C3646: logOut: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,24): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,19): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,32): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,16): error C3646: GetCurDateTime: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,30): error C2059: синтаксическая ошибка: (
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,33): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,62): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,65): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,13): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,25): error C2065: FN: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,29): error C2653: ios_base: не является именем класса или пространства имен
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,39): error C2065: out: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(70,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(72,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(86,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,63): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(93,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,63): error C2065: n: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,68): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(100,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,63): error C2065: d: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,68): error C2065: endl: необъявленный идентификатор
+  LevelGUI.cpp
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,18): error C3646: logOut: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,24): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,19): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,32): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,16): error C3646: GetCurDateTime: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,30): error C2059: синтаксическая ошибка: (
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,33): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,62): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,65): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,13): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,25): error C2065: FN: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,29): error C2653: ios_base: не является именем класса или пространства имен
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,39): error C2065: out: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(70,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(72,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(86,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,63): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(93,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,63): error C2065: n: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,68): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(100,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,63): error C2065: d: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,68): error C2065: endl: необъявленный идентификатор
+  MyTools.cpp
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,18): error C3646: logOut: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,24): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,19): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,32): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,16): error C3646: GetCurDateTime: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,30): error C2059: синтаксическая ошибка: (
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,33): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,62): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,65): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,13): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,25): error C2065: FN: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,29): error C2653: ios_base: не является именем класса или пространства имен
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,39): error C2065: out: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(70,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(72,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(86,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,63): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(93,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,63): error C2065: n: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,68): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(100,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,63): error C2065: d: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,68): error C2065: endl: необъявленный идентификатор
+  Plane.cpp
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,18): error C3646: logOut: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,24): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,19): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,32): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,16): error C3646: GetCurDateTime: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,30): error C2059: синтаксическая ошибка: (
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,33): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,62): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,65): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,13): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,25): error C2065: FN: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,29): error C2653: ios_base: не является именем класса или пространства имен
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,39): error C2065: out: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(70,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(72,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(86,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,63): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(93,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,63): error C2065: n: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,68): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(100,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,63): error C2065: d: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,68): error C2065: endl: необъявленный идентификатор
+  SBomber.cpp
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,18): error C3646: logOut: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,24): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,19): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,32): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,16): error C3646: GetCurDateTime: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,30): error C2059: синтаксическая ошибка: (
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,33): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,62): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,65): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,13): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,25): error C2065: FN: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,29): error C2653: ios_base: не является именем класса или пространства имен
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,39): error C2065: out: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(70,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(72,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(86,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,63): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(93,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,63): error C2065: n: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,68): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(100,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,63): error C2065: d: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,68): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(27,60): error C2664: "void MyTools::FileLogger::WriteToLog(const int)": невозможно преобразовать аргумент 1 из "std::basic_string<char,std::char_traits<char>,std::allocator<char>>" в "const int"
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(27,44): message : Для выполнения данного преобразования нет доступного оператора преобразования, определенного пользователем, или вызов оператора невозможен
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,25): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(100,5): error C2065: logger: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(113,5): error C2065: logger: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(281,5): error C2065: logger: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(312,5): error C2065: logger: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(338,5): error C2065: logger: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(348,5): error C2065: logger: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(355,9): error C2065: logger: необъявленный идентификатор
+  SBomberProject.cpp
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,18): error C3646: logOut: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,24): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,19): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,32): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,16): error C3646: GetCurDateTime: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,30): error C2059: синтаксическая ошибка: (
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,33): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,62): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,65): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,13): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,25): error C2065: FN: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,29): error C2653: ios_base: не является именем класса или пространства имен
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,39): error C2065: out: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(70,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(72,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(86,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,63): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(93,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,63): error C2065: n: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,68): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(100,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,63): error C2065: d: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,68): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\SBomberProject.cpp(14,31): error C2664: "MyTools::FileLogger::FileLogger(const int)": невозможно преобразовать аргумент 1 из "const char [8]" в "const int"
+C:\gb\CPP_GoF\SBomberProject\SBomberProject.cpp(14,22): message : Не существует контекста, в котором такое преобразование возможно
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,9): message : см. объявление "MyTools::FileLogger::FileLogger"
+  Tank.cpp
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,18): error C3646: logOut: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(63,24): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,19): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(65,32): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,16): error C3646: GetCurDateTime: неизвестный спецификатор переопределения
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,30): error C2059: синтаксическая ошибка: (
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(76,33): error C2334: непредвиденные лексемы перед "{"; пропуск вероятного тела функции
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(92,62): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,48): error C2143: синтаксическая ошибка: отсутствие "," перед "&"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(99,65): error C2535: void MyTools::FileLogger::WriteToLog(const int): функция-член уже определена или объявлена
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(85): message : см. объявление "MyTools::FileLogger::WriteToLog"
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,13): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,25): error C2065: FN: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,29): error C2653: ios_base: не является именем класса или пространства имен
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(66,39): error C2065: out: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(70,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(72,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(86,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(88,63): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(93,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,63): error C2065: n: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(95,68): error C2065: endl: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(100,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,17): error C2065: logOut: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,27): error C3861: GetCurDateTime: идентификатор не найден
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,56): error C2065: str: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,63): error C2065: d: необъявленный идентификатор
+C:\gb\CPP_GoF\SBomberProject\MyTools.h(102,68): error C2065: endl: необъявленный идентификатор
+  Создание кода...
