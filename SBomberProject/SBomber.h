@@ -6,13 +6,14 @@
 #include "Bomb.h"
 #include "Ground.h"
 #include "Tank.h"
-#include "SBomberImpl.h"
+//#include "SBomberImpl.h"
+
 
 class SBomber
 {
 private:
     //-----7.2-----//
-   
+
     SBomberImpl* sbomberImpl;
 public:
 
@@ -30,10 +31,7 @@ public:
     void CheckObjects();
 
 private:
-    //-----7.2-----//
-    class SBomberImpl;
-    SBomberImpl* sbomberImpl;
-    //--------------------
+   
     //void CheckPlaneAndLevelGUI();
     //void CheckBombsAndGround();
     //void __fastcall CheckDestoyableObjects(Bomb* pBomb);

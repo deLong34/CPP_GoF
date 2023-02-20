@@ -12,8 +12,9 @@
 using namespace std;
 using namespace MyTools;
 extern FileLogger logger;
+class SBomberImpl;
 
-SBomber::SBomber()
+SBomber::SBomber() : sbomberImpl(new SBomberImpl())
     //: exitFlag(false),
     //startTime(0),
     //finishTime(0),
@@ -23,7 +24,6 @@ SBomber::SBomber()
     //bombsNumber(10),
     //score(0)
 {
-   // extern FileLogger logger;
     logger.WriteToLog(string(__FUNCTION__) + " was invoked");
     //WriteToLog(string(__FUNCTION__) + " was invoked");
 
@@ -93,6 +93,7 @@ SBomber::~SBomber()
             delete sbomberImpl->vecStaticObj[i];
         }
     }
+    delete sbomberImpl;
 }
 
 void SBomber::MoveObjects()
