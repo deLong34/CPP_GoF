@@ -1,1 +1,22 @@
-﻿
+﻿  House.cpp
+  SBomber.cpp
+C:\gb\CPP_GoF\SBomberProject\SBomber.h(36,47): warning C4244: аргумент: преобразование "size_t" в "double", возможна потеря данных
+C:\gb\CPP_GoF\SBomberProject\SBomber.h(38,1): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(314,13): error C2374: ra: переопределение; множественная инициализация
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(302): message : см. объявление "ra"
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(315,15): error C2371: ClonObj: переопределение; различные базовые типы
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(303): message : см. объявление "ClonObj"
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(309,5): error C2360: пропуск инициализации "ClonObj" из-за метки "case"
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(303): message : см. объявление "ClonObj"
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(309,5): error C2360: пропуск инициализации "ra" из-за метки "case"
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(302): message : см. объявление "ra"
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(322,5): error C2361: пропуск инициализации "ClonObj" из-за метки "default"
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(315): message : см. объявление "ClonObj"
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(322,5): error C2361: пропуск инициализации "ra" из-за метки "default"
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(314): message : см. объявление "ra"
+C:\gb\CPP_GoF\SBomberProject\SBomber.cpp(434,41): warning C4244: аргумент: преобразование "size_t" в "double", возможна потеря данных
+  SBomberProject.cpp
+C:\gb\CPP_GoF\SBomberProject\SBomber.h(36,47): warning C4244: аргумент: преобразование "size_t" в "double", возможна потеря данных
+C:\gb\CPP_GoF\SBomberProject\SBomber.h(38,1): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+  Tank.cpp
+  Создание кода...

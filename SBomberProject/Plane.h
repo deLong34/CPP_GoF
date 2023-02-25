@@ -9,6 +9,9 @@ public:
 
     inline void ChangePlaneY(double dy) { yDirection += dy; }
 
+    Plane* clone() override {
+        return new Plane();
+    }
 private:
 
 };
