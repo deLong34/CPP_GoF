@@ -1,7 +1,7 @@
 
 #include <conio.h>
 #include <windows.h>
-
+#include <iostream>
 #include "MyTools.h"
 #include "SBomber.h"
 #include "Bomb.h"
@@ -12,15 +12,9 @@
 using namespace std;
 using namespace MyTools;
 
-SBomber::SBomber()
-    : exitFlag(false),
-    startTime(0),
-    finishTime(0),
-    deltaTime(0),
-    passedTime(0),
-    fps(0),
-    bombsNumber(10),
-    score(0)
+SBomber::SBomber() : exitFlag(false), startTime(0), finishTime(0), deltaTime(0), passedTime(0), fps(0), bombsNumber(10),
+    score(0) 
+
 {
     WriteToLog(string(__FUNCTION__) + " was invoked");
 
@@ -62,6 +56,7 @@ SBomber::SBomber()
     pHouse->SetWidth(13);
     pHouse->SetPos(80, groundY - 1);
     vecStaticObj.push_back(pHouse);
+
 
     /*
     Bomb* pBomb = new Bomb;
@@ -298,6 +293,31 @@ void SBomber::ProcessKBHit()
     case 'B':
         DropBomb();
         break;
+//-----1.1/1-----//
+    case 'd':
+        DropBomb();
+        vecDynamicObj.push_back(FindAllBombs().back()->clone());  
+        score -= Bomb::BombCost;
+        //-----1.1/2-----//
+        int ra = rand() % 3;
+        auto* ClonObj = vecStaticObj[ra];
+        ClonObj->SetPos(FindClonePos(), 3);
+        vecStaticObj.push_back(ClonObj);
+        //
+        break;
+
+    case 'D':
+        DropBomb();
+        vecDynamicObj.push_back(FindAllBombs().back()->clone());
+        score -= Bomb::BombCost;
+        //-----1.1/2-----//
+        int ra = rand() % 3;
+        auto* ClonObj = vecStaticObj[ra];
+        ClonObj->SetPos(FindClonePos(), 3);
+        vecStaticObj.push_back(ClonObj);
+        //
+        break;
+
 
     default:
         break;
@@ -364,5 +384,73 @@ void SBomber::DropBomb()
         vecDynamicObj.push_back(pBomb);
         bombsNumber--;
         score -= Bomb::BombCost;
+    }
+}
+//-----2-----//
+void SBomber::AnimateScrolling() {
+    //
+    static const size_t ScrollHeight = 30;
+    static const size_t ScrollWidth = 30;
+    static const char* ppScroll[ScrollHeight] =
+    { "                              ",
+    "                              ",
+    "                              ",
+    "                              ",
+    "                              ",
+    "                              ",
+    "                              ",
+    "                              ",
+    "                              ",
+    " Project manager:             ",
+    "              Ivan Vasilevich ",
+    "                              ",
+    " Developers:                  ",
+    "             Nikolay Gavrilov ",
+    "           Dmitriy Sidelnikov ",
+    "                    Eva Brown ",
+    "                              ",
+    " Designers:                   ",
+    "              Anna Pachenkova ",
+    "               Elena Shvaiber ",
+    "                              ",
+    "                              ",
+    "                              ",
+    "                              ",
+    "                              ",
+    "                              ",
+    "                              ",
+    "                              ",
+    "                              ",
+    "                              " };
+    WriteToLog(string(__FUNCTION__) + " was invoked");
+    const size_t windowHeight = 10; // Размер окна для скроллинга
+    const size_t startX = MyTools::GetMaxX() / 2 - ScrollWidth / 2;
+    const size_t startY = MyTools::GetMaxY() / 2 - windowHeight / 2;
+    double curPos = 0;
+    int st = 0;
+    do {
+        TimeStart();
+        MyTools::ClrScr();
+        MyTools::GotoXY(0, windowHeight - int(curPos));
+        printArr2d(ppScroll, int(curPos), ScrollWidth);
+        // вывод windowHeight строк из ppScroll используя смещение curPos
+        // ...
+        MyTools::GotoXY(0, 0);
+        TimeFinish();
+        curPos += deltaTime * 0.0015;
+    } while (!_kbhit() && int(curPos) <= (ScrollHeight - windowHeight));
+    MyTools::ClrScr();
+
+}
+
+void SBomber::printArr2d(const char** Arr, int x, int y) {
+    for (int i = 0; i < x; i++)
+    {
+       // MyTools::GotoXY(0, 30-i);
+        for (int j = 0; j < y; j++) 
+        {
+            std::cout << Arr[i][j];
+        }
+        std::cout << std::endl;
     }
 }

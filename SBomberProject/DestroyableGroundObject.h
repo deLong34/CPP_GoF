@@ -12,6 +12,9 @@ public:
 
     virtual inline uint16_t GetScore() const = 0;
 
+    //-----1.1/2-----//
+    virtual DestroyableGroundObject* clone() = 0;
+
 protected:
 
 };
